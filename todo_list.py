@@ -16,12 +16,12 @@ def add_task(task):
     tasks = load_tasks()
     tasks.append(task)
     save_tasks(tasks)
-    print("✅ Task added!")
+    print("Task added!")
 
 def view_tasks():
     tasks = load_tasks()
     if not tasks:
-        print("📭 No tasks yet.")
+        print("No tasks yet.")
     else:
         for i, task in enumerate(tasks, start=1):
             print(f"{i}. {task}")
@@ -31,13 +31,13 @@ def delete_task(index):
     if 0 < index <= len(tasks):
         removed = tasks.pop(index - 1)
         save_tasks(tasks)
-        print(f"🗑 Deleted: {removed}")
+        print(f"Deleted: {removed}")
     else:
-        print("❌ Invalid task number.")
+        print("Invalid task number.")
 
 def main():
     while True:
-        print("\n📋 To-Do List")
+        print("\n To-Do List")
         print("1. View Tasks\n2. Add Task\n3. Delete Task\n4. Exit")
         choice = input("Enter your choice (1-4): ")
 
@@ -51,12 +51,12 @@ def main():
                 index = int(input("Enter task number to delete: "))
                 delete_task(index)
             except ValueError:
-                print("❌ Please enter a valid number.")
+                print(" Please enter a valid number.")
         elif choice == "4":
-            print("👋 Exiting To-Do List.")
+            print("Exiting To-Do List.")
             break
         else:
-            print("❌ Invalid choice.")
+            print("Invalid choice.")
 
 if __name__ == "__main__":
     main()
