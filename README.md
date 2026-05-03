@@ -17,10 +17,16 @@ This repository contains beginner-friendly Python applications demonstrating bas
 - Python
 
 ## Concepts Covered
-- If-else conditions
-- Functions
-- User input/output
-- Basic data structures
+- Python Functions (Modular Programming)
+- File Handling (Read/Write)
+- Exception Handling
+- Lists & Data Structures
+- Loops (for, while)
+- Conditional Statements
+- User Input Handling
+- String Formatting (f-strings)
+- Basic Arithmetic Operations
+- CLI-based Application Design
 
 ##  How to Run
 
