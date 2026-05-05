@@ -2,7 +2,7 @@ def add(a, b):
     return a + b
 
 
-def subtract(a, b):
+def sub(a, b):
     return a - b
 
 
@@ -45,7 +45,7 @@ def main():
         if choice == "1":
             print(f"Result: {add(num1, num2)}")
         elif choice == "2":
-            print(f"Result: {subtract(num1, num2)}")
+            print(f"Result: {sub(num1, num2)}")
         elif choice == "3":
             print(f"Result: {multiply(num1, num2)}")
         elif choice == "4":
